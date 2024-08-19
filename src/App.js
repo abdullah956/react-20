@@ -16,6 +16,10 @@ import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import TicTacToe from "./components/tic-tact-toe";
 import FeatureFlags from "./components/feature-flag";
 import FeatureFlagGlobalState from "./components/feature-flag/context";
+import UseFetchHookTest from "./components/use-fetch/test";
+import UseOnclickOutsideTest from "./components/use-outside-click/test";
+import UseWindowResizeTest from "./components/use-window-resize/test";
+
 function App() {
   return (
     <div className="App">
@@ -37,9 +41,17 @@ function App() {
       <GithubProfileFinder />
       <SearchAutocomplete />
       <TicTacToe /> */}
-      <FeatureFlagGlobalState>
+      {/* <FeatureFlagGlobalState>
         <FeatureFlags />
-      </FeatureFlagGlobalState>
+      </FeatureFlagGlobalState> */}
+      {/* useFetch - Custom Hook Test*/}
+      <UseFetchHookTest/>
+
+      {/* Use Onclick Outside Hook Test */}
+      <UseOnclickOutsideTest/>
+
+      {/* Use Window Resize Hook Test */}
+      <UseWindowResizeTest/>
     </div>
   );
 }
