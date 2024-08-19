@@ -19,7 +19,7 @@ import FeatureFlagGlobalState from "./components/feature-flag/context";
 function App() {
   return (
     <div className="App">
-      <Accordian />
+      {/* <Accordian />
       <RandomColor />
       <StarRating />
       <ImageSlider
@@ -36,9 +36,10 @@ function App() {
       <ModalTest />
       <GithubProfileFinder />
       <SearchAutocomplete />
-      <TicTacToe />
-      <FeatureFlags />
-      <FeatureFlagGlobalState />
+      <TicTacToe /> */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
