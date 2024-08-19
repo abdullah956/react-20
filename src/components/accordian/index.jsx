@@ -25,7 +25,10 @@ export default function Accordian() {
   console.log(selected, multiple);
   return (
     <div className="acc-wrapper">
-      <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
+      <button
+        style={{ marginTop: "120px" }}
+        onClick={() => setEnableMultiSelection(!enableMultiSelection)}
+      >
         Enable Multi Selection
       </button>
       <div className="accordian">

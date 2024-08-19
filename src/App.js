@@ -14,41 +14,31 @@ import ModalTest from "./components/custom-modal-popup/modal-test";
 import GithubProfileFinder from "./components/github-profile-finder";
 import SearchAutocomplete from "./components/search-autocomplete-with-api";
 import TicTacToe from "./components/tic-tact-toe";
+import FeatureFlags from "./components/feature-flag";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
 function App() {
   return (
     <div className="App">
-      {/*Accordian Component*/}
-      {/* <Accordian /> */}
-      {/*Random Color Component*/}
-      {/* <RandomColor /> */}
-      {/*StarRating Component*/}
-      {/* <StarRating/> */}
-      {/*ImageSlider Component*/}
-      {/* <ImageSlider
+      <Accordian />
+      <RandomColor />
+      <StarRating />
+      <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> */}
-      {/* Load more products component */}
-      {/* <LoadMoreData/> */}
-      {/* Tree view component */}
-      {/* <TreeView menus={menus} /> */}
-      {/* QR code generator component */}
-      {/* <QRCodeGenerator/> */}
-      {/* light and dark theme component*/}
-      {/* <LightDarkMode /> */}
-      {/* scroll indicator component */}
-      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
-      {/* custom tabs component */}
-      {/* <TabTest /> */}
-      {/* Custom Modal Component */}
-      {/* <ModalTest/> */}
-      {/* github omponent */}
-      {/* <GithubProfileFinder /> */}
-      {/* search auto Component */}
-      {/* <SearchAutocomplete/> */}
-      {/* tic tac Component */}
+      />
+      <LoadMoreData />
+      <TreeView menus={menus} />
+      <QRCodeGenerator />
+      <LightDarkMode />
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+      <TabTest />
+      <ModalTest />
+      <GithubProfileFinder />
+      <SearchAutocomplete />
       <TicTacToe />
+      <FeatureFlags />
+      <FeatureFlagGlobalState />
     </div>
   );
 }
